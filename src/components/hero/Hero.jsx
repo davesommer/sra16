@@ -41,10 +41,11 @@ const Subtitle = styled.h2`
   color: #FDFDFD;
 `
 
-const FindOutContainer = styled.div`  
+const FindOutContainer = styled.a`  
   display: flex;
   flex-direction: column;
   margin-bottom: 36px;
+  text-decoration: none;
   transition: transform .5s;
   :hover {
     transform: translateY(16px);
@@ -56,6 +57,7 @@ const FindOutText = styled.p`
   font-family: "Lato", sans-serif;
   font-size: 36px;
   color: #FDFDFD;
+  text-align: center;
 `
 
 const FindOutIcon = styled.img`
@@ -70,7 +72,7 @@ const Hero = () => (
       <Title>Für eine Demokratie mit Zukunft</Title>
       <Subtitle>Stimmrechtsalter 16 im Aargau</Subtitle>
     </HeroContainer>
-    <FindOutContainer>
+    <FindOutContainer href="#Argumente">
         <FindOutText>Erfahre mehr</FindOutText>
         <FindOutIcon src="arrow.svg" />
       </FindOutContainer>

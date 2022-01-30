@@ -42,7 +42,7 @@ const Argument = styled.div`
 
 const Arguments = () => {
     return(
-        <Container>
+        <Container id="Argumente">
             <Header>Argumente</Header>
             <Argument>
                 <Number src="numbers/one.svg" />
@@ -59,14 +59,14 @@ const Arguments = () => {
                 </Text>
             </Argument>
             <Argument>
-                <Number src="numbers/four.svg" />
+                <Number src="numbers/three.svg" />
                 <Text>
                     <Title>Reife Leute früh einbinden</Title>
                     <Content>Jungen Menschen wird politische Bildung schon heute in der Volksschule auf den Weg gegeben. Unsere Jugend ist reif, informiert und engagiert genug, um in der Politik mitbestimmen zu können, dies zeigt auch die Forschung. Möglicherweise wird durch die frühe Einbindung der Jugend die Stimmbeteiligung mit dem Stimmrechtsalter 16 sogar langfristig erhöht. Die Jugend wird direkt in die politischen Prozesse eingebunden und darf Verantwortung für unsere Gesellschaft übernehmen.</Content>
                 </Text>
             </Argument>
             <Argument>
-                <Number src="numbers/three.svg" />
+                <Number src="numbers/four.svg" />
                 <Text>
                     <Title>Fortschrittlicher Kanton Aargau</Title>
                     <Content>Unser Kanton ist fortschrittlich und möchte sich auf die Zukunft vorbereiten. Mit dem aktiven Stimmrechtsalter 16 schaffen wir die Grundlagen für eine Demokratie mit Zukunft. Hier wird die Zukunftsplanung zusammen mit den Betroffenen aktiv angegangen, so wie dies bereits im Kanton Glarus oder in Österreich seit 2007 der Fall ist.</Content>

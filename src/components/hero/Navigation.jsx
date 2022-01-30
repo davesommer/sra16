@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 const Nav = styled.div`
   margin: 0 15%;
   display: flex;
   justify-content: flex-end;
+  height : 64px;
+  align-items: center;
 `;
 
 const NavList = styled.ul`
@@ -45,16 +46,16 @@ const Navigation = () => {
     <Nav>
       <NavList>
         <ListItem>
-          <Link to="/">Argumente</Link>
+          <a href="#Argumente">Argumente</a>
         </ListItem>
         <ListItem>
-          <Link to="/">Komitee</Link>
+          <a href="#Komitee">Komitee</a>
         </ListItem>
         <ListItem>
-          <Link to="/">Spenden</Link>
+          <a href="#Spenden">Spenden</a>
         </ListItem>
         <ListItem>
-          <Link to="/">Unterstützen</Link>
+          <a href="#Unterstützen">Unterstützen</a>
         </ListItem>
       </NavList>
     </Nav>

@@ -1,17 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 const Container = styled.div`
     background: #9A1750;
     position: sticky;
     top: 0;
+    height : 64px;
 `   
 
 const Nav = styled.div`
+  height: 100%;
   margin: 0 15%;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 `;
 
 const NavList = styled.ul`
@@ -48,24 +50,24 @@ const ListItem = styled.li`
 
 const Navigation = () => {
     return (
-        <Container>
-            <Nav>
-                <NavList>
-                    <ListItem>
-                        <Link to="/">Argumente</Link>
-                    </ListItem>
-                    <ListItem>
-                        <Link to="/">Komitee</Link>
-                    </ListItem>
-                    <ListItem>
-                        <Link to="/">Spenden</Link>
-                    </ListItem>
-                    <ListItem>
-                        <Link to="/">Unterstützen</Link>
-                    </ListItem>
-                </NavList>
-            </Nav>
-        </Container>
+      <Container>
+          <Nav>
+            <NavList>
+              <ListItem>
+                <a href="#Argumente">Argumente</a>
+              </ListItem>
+              <ListItem>
+                <a href="#Komitee">Komitee</a>
+              </ListItem>
+              <ListItem>
+                <a href="#Spenden">Spenden</a>
+              </ListItem>
+              <ListItem>
+                <a href="#Unterstützen">Unterstützen</a>
+              </ListItem>
+              </NavList>
+          </Nav>
+      </Container>
     )
 }
 

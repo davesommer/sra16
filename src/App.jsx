@@ -1,5 +1,4 @@
 import Hero from './components/hero/Hero'
-import './App.css';
 import Navigation from './components/common/Navigation';
 import Content from './components/common/Content'
 import Arguments from "./components/arguments/Arguments"

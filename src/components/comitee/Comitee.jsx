@@ -45,8 +45,8 @@ const Organiststion = styled.p`
 
 const Comitee = () => {
     return(
-        <Container>
-            <Header>Kommitee</Header>
+        <Container id="Komitee">
+            <Header>Komitee</Header>
             <Members>
                 <Member>
                     <Image src="people/Sofia.png" />
