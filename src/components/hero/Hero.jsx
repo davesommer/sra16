@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Navigation from "./Navigation"
+import { breakpoints } from "../../utils/Breakpoint"
 
 const Container = styled.div`
   height: 100vh;
@@ -21,7 +22,7 @@ const HeroContainer = styled.div`
   flex-direction: column;
   flex: 1;
   justify-content: center;
-  row-gap: 48px;
+  row-gap: 4em;
   align-items: center;  
 `
 
@@ -29,16 +30,28 @@ const Title = styled.h1`
   margin: 0;
   font-family: "Mort", sans-serif;
   font-weight: 900;
-  font-size: 96px;
+  font-size: 6em;
   text-transform: uppercase;
   color: #FDFDFD;
+  ${breakpoints("font-size", "em", [
+    { 1200: 6 },
+    { 800: 5 },
+    { 600: 4 },
+    { 450: 3 }
+  ])};
 `
 const Subtitle = styled.h2`
   margin: 0;
   font-family: "Mort", sans-serif;
   font-weight: 900;
-  font-size: 72px;
+  font-size: 4em;
   color: #FDFDFD;
+  ${breakpoints("font-size", "em", [
+    { 1200: 4 },
+    { 800: 3 },
+    { 600: 3 },
+    { 450: 2 }
+  ])};
 `
 
 const FindOutContainer = styled.a`  
@@ -55,13 +68,25 @@ const FindOutContainer = styled.a`
 const FindOutText = styled.p`
   margin: 0;
   font-family: "Lato", sans-serif;
-  font-size: 36px;
+  font-size: 2em;
   color: #FDFDFD;
   text-align: center;
+  ${breakpoints("font-size", "em", [
+    { 1200: 2 },
+    { 800: 2 },
+    { 600: 1.5 },
+    { 450: 1.5 }
+  ])};
 `
 
 const FindOutIcon = styled.img`
-  height: 64px;
+  height: 4em;
+  ${breakpoints("font-size", "em", [
+    { 1200: 4 },
+    { 800: 3 },
+    { 600: 1 },
+    { 450: .75 }
+  ])};
   width: auto;
 ` 
 

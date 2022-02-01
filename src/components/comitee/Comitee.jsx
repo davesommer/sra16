@@ -33,13 +33,13 @@ const Name = styled.p`
     color: #212226;    
     font-family: "Mort", sans-serif;
     font-weight: 900;
-    font-size: 24px;
+    font-size: 1.5em;
 `
 
 const Organiststion = styled.p`
     margin: 0;
     font-family: "Lato", sans-serif;
-    font-size: 18px;
+    font-size: 1.2em;
 `
 
 

@@ -2,24 +2,23 @@ import React from "react";
 import styled from "styled-components";
 
 const Nav = styled.div`
-  margin: 0 15%;
+  margin: 0 20%;
   display: flex;
   justify-content: flex-end;
-  height : 64px;
+  height : 4em;
   align-items: center;
 `;
 
 const NavList = styled.ul`
   list-style: none;
   display: flex;
-  gap: 36px;
+  gap: 3em;
 `;
 
 const ListItem = styled.li`
   font-family: "Mort", sans-serif;
   font-weight: 900;
-  font-size: 24px;
-  text-transform: uppercase;
+  font-size: 1.5em;
 
   > a {
     color: #FDFDFD;
@@ -29,7 +28,7 @@ const ListItem = styled.li`
   > a:hover {
     color: #FDFDFD;
     border-bottom: 1px solid #FDFDFD;
-    padding-bottom: 3px;
+    padding-bottom: 6px;
   }
 
   > a:active {

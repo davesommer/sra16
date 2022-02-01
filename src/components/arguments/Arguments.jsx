@@ -5,7 +5,7 @@ import Header from "../common/Header"
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    row-gap: 80px;
+    row-gap: 5em;
 `
 
 const Number = styled.img`
@@ -25,13 +25,13 @@ const Title = styled.h2`
     color: #212226;    
     font-family: "Mort", sans-serif;
     font-weight: 900;
-    font-size: 48px;
+    font-size: 3em;
 `
 
 const Content = styled.p`
     margin: 0;
     font-family: "Lato", sans-serif;
-    font-size: 18px;
+    font-size: 1.2em;
     align-self: flex-start;
 `
 
