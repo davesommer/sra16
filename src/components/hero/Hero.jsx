@@ -32,6 +32,7 @@ const Title = styled.h1`
   font-weight: 900;
   font-size: 6em;
   text-transform: uppercase;
+  text-align: center;
   color: #FDFDFD;
   ${breakpoints("font-size", "em", [
     { 1200: 6 },
@@ -45,6 +46,7 @@ const Subtitle = styled.h2`
   font-family: "Mort", sans-serif;
   font-weight: 900;
   font-size: 4em;
+  text-align: center;
   color: #FDFDFD;
   ${breakpoints("font-size", "em", [
     { 1200: 4 },
@@ -82,8 +84,8 @@ const FindOutText = styled.p`
 const FindOutIcon = styled.img`
   height: 4em;
   ${breakpoints("font-size", "em", [
-    { 1200: 4 },
-    { 800: 3 },
+    { 1200: 1 },
+    { 800: 1 },
     { 600: 1 },
     { 450: .75 }
   ])};

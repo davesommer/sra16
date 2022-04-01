@@ -41,23 +41,25 @@ const ListItem = styled.li`
 `;
 
 const Navigation = () => {
+  let width = window.innerWidth;
     return (
-    <Nav>
-      <NavList>
-        <ListItem>
-          <a href="#Argumente">Argumente</a>
-        </ListItem>
-        <ListItem>
-          <a href="#Komitee">Komitee</a>
-        </ListItem>
-        <ListItem>
-          <a href="#Spenden">Spenden</a>
-        </ListItem>
-        <ListItem>
-          <a href="#Unterstützen">Unterstützen</a>
-        </ListItem>
-      </NavList>
-    </Nav>
+      <>
+      { width > 600 && 
+        <Nav>
+          <NavList>
+            <ListItem>
+              <a href="#Argumente">Argumente</a>
+            </ListItem>
+            <ListItem>
+              <a href="#Komitee">Komitee</a>
+            </ListItem>
+            <ListItem>
+              <a href="#Unterstützen">Unterstützen</a>
+            </ListItem>
+            </NavList>
+        </Nav>
+      }
+    </>
     )
 }
 

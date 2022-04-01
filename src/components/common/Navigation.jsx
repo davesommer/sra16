@@ -71,36 +71,29 @@ const MobileNav = styled.div`
 
 const Navigation = () => {
 
-    const  [showNav, setShowNav] = useState(false);
+    // const  [showNav, setShowNav] = useState(false);
 
     let width = window.innerWidth;
     return (
-      <Container>
+      <>
+        { width > 600 && 
+          <Container>
           <Nav>
             <NavList>
-              { width > 600 && 
-                <>
-                <ListItem>
-                  <a href="#Argumente">Argumente</a>
-                </ListItem>
-                <ListItem>
-                  <a href="#Komitee">Komitee</a>
-                </ListItem>
-                <ListItem>
-                  <a href="#Spenden">Spenden</a>
-                </ListItem>
-                <ListItem>
-                  <a href="#Unterstützen">Unterstützen</a>
-                </ListItem>
-                </>
-              }
-              { width <= 600 && 
-                <MenuIcon onClick={() => setShowNav(true)} src="menu.svg"/>
-              }
-              { showNav && <MobileNav></MobileNav>}
+              <ListItem>
+                <a href="#Argumente">Argumente</a>
+              </ListItem>
+              <ListItem>
+                <a href="#Komitee">Komitee</a>
+              </ListItem>
+              <ListItem>
+                <a href="#Unterstützen">Unterstützen</a>
+              </ListItem>
               </NavList>
           </Nav>
-      </Container>
+          </Container>
+        }
+      </>
     )
 }
 
